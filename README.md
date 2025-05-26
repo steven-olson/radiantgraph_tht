@@ -63,4 +63,10 @@ Ideally I like to lay out my code so that services act as a kind of interface
 or coordinator that execute on business logic without defining the nitty gritty
 of how to actually acheive that. I didn't have the time to do that here.
 
+Oh also I realize a lot of this isn't async like fastapi wants, I'm still coming
+from the django/flask world of spinning up a thread for each request. If I had more
+time I'd go through and ensure async is achieved to make sure performance is optimal.
+The biggest hurdle there would be to make sure the psql driver is properly async, something
+I recall being an issue last time I tried something similar.
+
 
